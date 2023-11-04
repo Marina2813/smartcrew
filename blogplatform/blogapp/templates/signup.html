@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
 </head>
 
 <body>
@@ -13,8 +13,8 @@
                 <div class="header">Signup</div>
                 <input type="text" placeholder="Username">
                 <input type="password" placeholder="Password">
-                <button>Create Account</button>
-                <p>Already a member? <a href="http://127.0.0.1:5500/login.html">Log in</a></p>
+                <button><a href="/signup" class="button">Create Account</a></button>
+                <p>Already a member? <a href="/login">Log in</a></p>
             </div>
         </div>
     </div>
