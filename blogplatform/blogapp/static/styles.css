@@ -1,8 +1,9 @@
 html, body {
     background-image: url('GRANDE.png');
-    
     background-repeat: no-repeat; /* Prevent image from repeating */
     background-size: cover;
+    height: 100%;
+    overflow: hidden;
 }
 
 body {
@@ -14,29 +15,38 @@ body {
 #rectangle {
     position: absolute;
     top: 0;
-    left: 829px;
-    width: 650px;
-    height: 1024px;
-    
+    left: 50%; 
+    transform: translateX(-50% -50%);
+    width: 80%;
+    height: 80vh;
+    max-width: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .box {
-    width: 300px;
+    width: 300%;
+    max-width: 300px;
     padding: 50px;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     text-align: center;
     color: white;
+    overflow: hidden;
 }
 
 .header {
     font-size: 24px;
     margin-bottom: 20px;
 }
+
+input, button, p {
+    margin: 0;
+    padding: 0;
+}
+
 
 input {
     width: 100%;
